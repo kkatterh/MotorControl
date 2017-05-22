@@ -34,7 +34,12 @@ void loop() {
     // turn LED on:
     analogWrite(ledPin, 250);
     Serial.println("HIGH");
-  } 
+  }   
+  else {
+    // turn LED off:
+    analogWrite(ledPin, 0);
+    Serial.println("LOW");
+  }
   if (button2state == HIGH) {
     //turn LED on at 175
     analogWrite(ledPin, 175);
