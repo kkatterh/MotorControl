@@ -48,10 +48,16 @@ void loop() {
     Serial.println("175 YO");
     buttonpress ++;
   }
+  if (button3state == HIGH) {
+    //turn LED on at 50
+    analogWrite(ledPin, 50);
+    Serial.println("50");
+    buttonpress ++;
+  }
+  delay(100);
   if (buttonpress == 0) {
     // turn LED off:
     analogWrite(ledPin, 0);
     Serial.println("LOW");
   }
-  
 }
