@@ -4,7 +4,7 @@
 const int button1 = 2;     // the number of the pushbutton pin
 const int button2 = 3;
 const int button3 = 4;
-const int ledPin =  13;      // the number of the LED pin
+const int ledPin =  11;      // the number of the LED pin
 
 // variables will change:
 int button1state = 1;         // variable for reading the pushbutton status
